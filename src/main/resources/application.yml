@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:mydb
+    username: sa
+    password:
+    driverClassName: org.h2.Driver
+  h2:
+    console:
+      enabled: true
+      path: /h2
+  jpa:
+    hibernate:
+      ddl-auto: validate
+
+jwt:
+  authorization-header: Authorization
+  validity: 900_000
+  secret: there is no spoon; greed is good
+  user-id: userId
